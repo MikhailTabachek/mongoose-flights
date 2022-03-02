@@ -4,6 +4,8 @@ import * as flightsCtrl from '../controllers/flights.js'
 
 /* GET flights listing. */
 router.get('/new', flightsCtrl.new)
+router.get('/', flightsCtrl.index)
+router.post('/', flightsCtrl.create)
 
 export {
   router
