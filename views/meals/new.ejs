@@ -1,0 +1,21 @@
+<%- include("../partials/html-head") %>
+<link rel="stylesheet" href="/stylesheets/meals/new.css"/>
+<%- include("../partials/nav") %>
+
+<main>
+	<h1><%= title %></h1>
+  <p>Please make sure that the Meal is not in the dropdown
+    <select>
+      <% meals.forEach(function(meal) { %>
+        <option><%= meal.name %></option>
+      <% }) %>
+    </select>
+  </p>
+  <form id="add-meal" action="/meals" method="POST">
+    <label for="meal-name">Name:</label>
+    <input type="text" name="name" id="meal-name">
+    <button type="submit">🍽 Add Meal 🍽</button>
+  </form>
+</main>
+
+<%- include("../partials/footer") %>
