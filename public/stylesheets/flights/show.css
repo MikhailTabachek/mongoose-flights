@@ -36,3 +36,27 @@ section {
 section div:nth-child(even) {
   font-weight: bold;
 }
+
+.inputs{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.buttons{
+ margin: 10px;
+ border: 2px solid #1F487E;
+border-radius: 5px;
+}
+
+.buttons:hover{
+  background-color: rgb(253, 252, 234);
+}
+
+#edit-flight{
+  padding: 5px;
+}
+
+#seat-select{
+  margin-top: 10px;
+}

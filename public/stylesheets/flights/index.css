@@ -33,3 +33,14 @@ table td {
 #list a:hover {
   background-color: white;
 }
+
+#delete-btn{
+  padding: 3px;
+  border: 2px solid #1F487E;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#delete-btn:hover{
+  background-color: #6290C8;
+}

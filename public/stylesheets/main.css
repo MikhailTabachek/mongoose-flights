@@ -20,10 +20,10 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: #FAC05E;
   /* Use a system font, if none are available use an available sans-sarif font */
   margin: 0;
-  color: #424748;
+  color: #1a1b1b;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr;
@@ -38,8 +38,9 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e8eceb;
+  background-color: #829CBC;
   padding: 20px;
+  overflow-wrap: break-word;
 }
 
 body > main h1:first-child {
@@ -48,7 +49,7 @@ body > main h1:first-child {
 
 body > nav {
   grid-area: nav;
-  background-color: #b8c0c2;
+  background-color: #1D3461;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -66,22 +67,32 @@ nav > a {
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
-  color: #424748;
+  color: #f3ecec;
 }
 
 nav > a:visited {
-  color: #424748;
+  color: #ebf2f3;
 }
 
 nav > a:hover {
-  color: white;
-  background-color: #424748;
+  background-color: #1F487E;
 }
 
 nav > a.active {
-  color: white;
+  color: rgb(248, 237, 237);
 }
 
 .fas::before {
   font-family: "Font Awesome 5 Free";
+}
+
+.buttons{
+  padding: 3px;
+  border: 2px solid #1F487E;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttons:hover{
+  background-color: #6290C8;
 }

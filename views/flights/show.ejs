@@ -26,22 +26,29 @@
         <option value="<%= meal._id %>"><%= meal.name %></option>
       <% }) %>
     </select>
-    <button type="submit">Add to Meals</button>
+    <button class="buttons" type="submit">Add to Meals</button>
   </form>
   <h3>Add Ticket</h3>
   <form
     action="/flights/<%= flight._id %>/tickets"
     method="POST"
   >
+  <div class="inputs">
     <label for="seat-select">Enter a Seat(A-F) and Row(1-9):
+      <br>
       <input name="seat" id="seat-select" required pattern="[A-F][1-9]\d?" placeholder="Example: C5" autocomplete="off">
     </label>
+    <br>
+    <br>
     <label for="ticket-price">Ticket Price:
+      <br>
+      <br>
       <input name="price" id="ticket-price"type="text" autocomplete="off" placeholder="Enter amount...">
     </label>
-      <button type="submit">Add Ticket</button>
+    <br>
+      <button class="buttons" type="submit">Add Ticket</button>
   </form>
-
+</div>
 
   <% if (flight.tickets.length) { %>
     <table>
@@ -63,7 +70,7 @@
         <% } %>
   <div>
     <a href="/flights/<%= flight._id %>/edit">
-      <button>Edit Your Flight</button>
+      <button class="buttons" id="edit-flight">Edit Your Flight</button>
     </a>
   </div>
 </main>
